@@ -15,3 +15,10 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Ignore images
+/app/assets/images
+
+.DS_Store
+app/.DS_Store
+app/assets/.DS_Store
