@@ -27,4 +27,6 @@ class ProductTest < ActiveSupport::TestCase
 
 		product.price = 1
 		assert product.valid?
+	end
+	
 end
