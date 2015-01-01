@@ -18,9 +18,15 @@ class LineItemsController < ApplicationController
   end
 
   def create
-    product = Product.find(params[:product_id])
+    # # Creates a new simple line_item
     # @line_item = LineItem.new(line_item_params)
-    @line_item = @cart.line_items.build(product: product)
+
+    # Links the product with the line_item being created
+    product = Product.find(params[:product_id])
+    # @line_item = @cart.line_items.build(product: product)
+
+    # Allows updating quantity when the product already exists in the cart
+    @line_item = @cart.add_product(product.id)
 
     respond_to do |format|
       if @line_item.save
