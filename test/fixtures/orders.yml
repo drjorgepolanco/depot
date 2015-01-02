@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Jorge Polanco
+  name: Julito Triculi
   address: MyText
-  email: jorge@example.org
+  email: triculito@example.com
   pay_type: Check
 
 two:
