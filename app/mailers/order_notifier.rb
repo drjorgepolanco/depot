@@ -7,7 +7,7 @@ class OrderNotifier < ApplicationMailer
   #
   def received(order)
     @order = order
-
+    # Sends an email when the order has been received
     mail to: order.email, subject: 'Pragmatic Store Order Confirmation'
   end
 
@@ -16,9 +16,9 @@ class OrderNotifier < ApplicationMailer
   #
   #   en.order_notifier.shipped.subject
   #
-  def shipped
-    @greeting = "Hi"
-
-    mail to: "to@example.org"
+  def shipped(order)
+    @order = order
+    # Sends an email when the order has been shipped
+    mail to: order.email, subject: 'Pragmatic Store Order Shipped'
   end
 end
