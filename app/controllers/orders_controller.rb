@@ -25,11 +25,20 @@ class OrdersController < ApplicationController
   end
 
   def create
+    # Capture the values from the form to populate a new Order model object.
     @order = Order.new(order_params)
+    # Add the line items from our cart to that order.
+    @order.add_line_items_from_cart(@cart)
 
     respond_to do |format|
+      # Validates and save the order. If it fails, displays appropriate messages,
+      # and let the user correct any problems.
       if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
+        # If the order is successfully saved, delete the cart
+        Cart.destroy(session[:cart_id])
+        session[:cart_id] = nil
+        # redisplay catalog page, and display confirmation message.
+        format.html { redirect_to store_url, notice: 'Than you for your order.' }
         format.json { render :show, status: :created, location: @order }
       else
         format.html { render :new }
