@@ -11,8 +11,11 @@ class OrdersController < ApplicationController
   end
 
   def new
+    # prevents users from navigating to checkout and creating empty orders
     if @cart.line_items.empty?
       redirect_to store_url, notice: "Your cart is empty"
+      # Without return we'll get a double render error:
+      # controller will attemp to both redirect and render output
       return
     end
     @order = Order.new
