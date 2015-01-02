@@ -37,6 +37,8 @@ class OrdersController < ApplicationController
         # If the order is successfully saved, delete the cart
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
+        # Send email
+        OrderNotifier.received(@order).deliver
         # redisplay catalog page, and display confirmation message.
         format.html { redirect_to store_url, notice: 'Than you for your order.' }
         format.json { render :show, status: :created, location: @order }
