@@ -38,7 +38,7 @@ class OrdersController < ApplicationController
         Cart.destroy(session[:cart_id])
         session[:cart_id] = nil
         # Send email
-        OrderNotifier.received(@order).deliver
+        OrderNotifier.received(@order).deliver_now
         # redisplay catalog page, and display confirmation message.
         format.html { redirect_to store_url, notice: 'Than you for your order.' }
         format.json { render :show, status: :created, location: @order }
