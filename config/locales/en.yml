@@ -40,3 +40,13 @@ en:
    title: "Your Cart"
    empty: "Empty Cart"
    checkout: "Checkout"
+
+en:
+ number:
+  currency:
+   format:
+    unit: "$"
+    precision: 2
+    separator: "."
+    delimiter: ","
+    format: "%u%n"
