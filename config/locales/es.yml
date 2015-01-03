@@ -1,8 +1,20 @@
 es:
-  layouts: 
-    application:
-      title: 			"Publicaciones Pragmatic"
-      home: 			"Inicio"
-      questions: 	"Preguntas"
-      news: 			"Noticias"
-      contact: 		"Contacto"
+ layouts: 
+  application:
+   title: "Publicaciones Pragmatic"
+   home: "Inicio"
+   questions: "Preguntas"
+   news: "Noticias"
+   contact: "Contacto"
+
+es:
+ store:
+  index:
+   title: "Su Catálogo de Pragmatic"
+   add: "Añadir al Carrito"
+
+es:
+ carts:
+  cart: "Carrito de la Compra"
+  empty: "Vaciar Carrito"
+  checkout: "Comprar"

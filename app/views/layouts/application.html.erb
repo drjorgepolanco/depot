@@ -26,11 +26,17 @@
 					<%= render @cart %>
 				<% end %>
 			<% end %>
+			<!-- <ul>
+				<li><%#= link_to t('.home'), 			store_path %></li>
+				<li><%#= link_to t('.questions'), '#' 			 %></li>
+				<li><%#= link_to t('.news'), 			'#' 			 %></li>
+				<li><%#= link_to t('.contact'), 	'#' 			 %></li>
+			</ul> -->
 			<ul>
-				<li><%= link_to t('.home'), 			store_path %></li>
-				<li><%= link_to t('.questions'), 	'#' 			 %></li>
-				<li><%= link_to t('.news'), 			'#' 			 %></li>
-				<li><%= link_to t('.contact'), 		'#' 			 %></li>
+				<li><a href="<%= store_path %>"><%= t('.home') %></a></li>
+				<li><a href="#"><%= t('.questions') %></a></li>
+				<li><a href="#"><%= t('.news') %></a></li>
+				<li><a href="#"><%= t('.contact') %></a></li>
 			</ul>
 
 			<% if session[:user_id] %>

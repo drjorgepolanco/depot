@@ -20,10 +20,23 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  layouts: 
-    application:
-      title: 			"Pragmatic Bookshelf"
-      home: 			"Home"
-      questions: 	"Questions"
-      news: 			"News"
-      contact: 		"Contact"
+ layouts: 
+  application:
+   title: "Pragmatic Bookshelf"
+   home: "Home"
+   questions: "Questions"
+   news: "News"
+   contact: "Contact"
+
+en:
+ store:
+   index:
+    title: "Your Pragmatic Catalog"
+    add: "Add to Cart"
+
+en:
+ carts:
+  cart:
+   title: "Your Cart"
+   empty: "Empty Cart"
+   checkout: "Checkout"
