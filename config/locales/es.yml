@@ -15,9 +15,10 @@ es:
 
 es:
  carts:
-  cart: "Carrito de la Compra"
-  empty: "Vaciar Carrito"
-  checkout: "Comprar"
+  cart: 
+   title: "Carrito de la Compra"
+   empty: "Vaciar Carrito"
+   checkout: "Comprar"
 
 es:
  number:
