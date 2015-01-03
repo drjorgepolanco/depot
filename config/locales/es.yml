@@ -9,8 +9,8 @@ es:
 
  store:
   index:
-   title: "Su Catálogo de Pragmatic"
-   buy: "Añadir al Carrito"
+   title_html: "Su Catálogo de Pragmatic"
+   add_html: "A&ntilde;adir al Carrito"
 
  carts:
   cart: 
@@ -39,6 +39,14 @@ es:
    submit: "Realizar Pedido"
 
  activerecord:
+  models:
+   order: "pedido"
+  attributes:
+   order:
+    address: "Dirección"
+    name: "Nombre"
+    email: "Correo Electrónico"
+    pay_type: "Forma de pago"
   errors:
    messages:
     inclusion: "no est&aacute; incluido en la lista" 
@@ -49,13 +57,5 @@ es:
    header:
     one: "1 error ha impedido que esta %{model} se procese"
     other: "%{count} errores han impedido que esta %{model} se procese"
-  models:
-   order: "pedido"
-  attributes:
-   order:
-    address: "Dirección"
-    name: "Nombre"
-    email: "Correo Electrónico"
-    pay_type: "Forma de pago"
-
+  
  thanks: "Gracias por su pedido"
