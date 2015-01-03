@@ -20,48 +20,4 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
- layouts: 
-  application:
-   title: "Pragmatic Bookshelf"
-   home: "Home"
-   questions: "Questions"
-   news: "News"
-   contact: "Contact"
-
-en:
- store:
-   index:
-    title: "Your Pragmatic Catalog"
-    add: "Add to Cart"
-
-en:
- carts:
-  cart:
-   title: "Your Cart"
-   empty: "Empty Cart"
-   checkout: "Checkout"
-
-en:
- number:
-  currency:
-   format:
-    unit: "$"
-    precision: 2
-    separator: "."
-    delimiter: ","
-    format: "%u%n"
-
-en:
- orders:
-  new:
-   legend: "Please Enter Your Details"
-  form:
-   name: "Name"
-   address: "Address"
-   email: "E-mail"
-   pay_type: "Pay with"
-   pay_prompt: "Select a payment method"
-   submit: "Place Order"
-
-en:
- thanks: "Thank you for your order"
+ hello: "Hello World"
