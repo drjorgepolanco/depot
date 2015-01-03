@@ -28,20 +28,17 @@ en:
    news: "News"
    contact: "Contact"
 
-en:
  store:
-   index:
-    title: "Your Pragmatic Catalog"
-    add: "Add to Cart"
+  index:
+   title: "Your Pragmatic Catalog"
+   buy: "Add to Cart"
 
-en:
  carts:
   cart:
    title: "Your Cart"
    empty: "Empty Cart"
    checkout: "Checkout"
 
-en:
  number:
   currency:
    format:
@@ -51,7 +48,6 @@ en:
     delimiter: ","
     format: "%u%n"
 
-en:
  orders:
   new:
    legend: "Please Enter Your Details"
@@ -63,5 +59,4 @@ en:
    pay_prompt: "Select a payment method"
    submit: "Place Order"
 
-en:
  thanks: "Thank you for your order"
